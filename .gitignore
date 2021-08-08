@@ -1,7 +1,7 @@
 # Project stuffs
 /raw/*
 /data/
-/output/
+#/output/
 /backup/
 /tensorboard/
 
