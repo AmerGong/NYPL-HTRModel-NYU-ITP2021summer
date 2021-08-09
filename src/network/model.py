@@ -150,6 +150,7 @@ class HTRModel:
         else:
             self.learning_schedule = False
 
+        #optimizer: ADAM or RMSprop
         optimizer = tf.keras.optimizers.Adam(learning_rate=learning_rate)
 
         # create and compile
@@ -281,6 +282,7 @@ class HTRModel:
         # so sum of non-zero gives number of characters in this string
         label_length = tf.math.count_nonzero(y_true, axis=-1, keepdims=True, dtype="int64")
 
+        #CTC LOSS FUNCTION
         loss = K.ctc_batch_cost(y_true, y_pred, input_length, label_length)
 
         # average loss across all entries in the batch
@@ -493,7 +495,7 @@ def puigcerver_octconv(input_size, d_model):
     alpha = 0.25
     input_data = Input(name="input", shape=input_size)
     high = input_data
-    low = tf.keras.layers.MaxPooling2D(2)(input_data)
+    low = tf.keras.layers.MaxPooling2D(2)(input_data)#Original version： AveragePooling
 
     high, low = OctConv2D(filters=16, alpha=alpha)([high, low])
     high = BatchNormalization()(high)
