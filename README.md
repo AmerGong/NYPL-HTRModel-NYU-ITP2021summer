@@ -41,21 +41,23 @@ NYPL sample with default parameters in the **[tutorial](https://github.com/AmerG
 <img src="https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/doc/image/NYPL_example.png?raw=true">
 
 ## Tutorial
-#### Step1.Access to date
-A Jupyter Notebook is available to access to NYPL data, check out the **[NYPL_API](https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/NYPL_API.ipynb)**.
-
-### Step2.Make the NYPL dataset
-**[NYPL_dataset](https://drive.google.com/file/d/1wxeNjSUdID2FFUPOsFKkygIKnoWTjg0B/view?usp=sharing)** \
-We made the data set ourselves. Use **[Readcoop](https://readcoop.eu/)** to get the ground truth. And use the picture editing tool to cut the images into lines. Process the cut pictures through the **[imageresize.py](https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/imageresize.py)** file.
-
-### Step3.Clone the project to local
+### Step1.Clone the project to local
 ```
 git clone https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer.git
 ```
-###Step4.Open it locally
-It is strongly recommended to use PyCharm.
+#### Step2.Access to date
+A Jupyter Notebook is available to access to NYPL data, check out the **[NYPL_API](https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/NYPL_API.ipynb)**.
+
+### Step3.Make the NYPL dataset
+**[NYPL_dataset](https://drive.google.com/file/d/1wxeNjSUdID2FFUPOsFKkygIKnoWTjg0B/view?usp=sharing)** \
+We made the data set ourselves. Use **[Readcoop](https://readcoop.eu/)** to get the ground truth. And use the picture editing tool to cut the images into lines. Process the cut pictures through the **[imageresize.py](https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/imageresize.py)** file.\
+<img src="https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/doc/image/56775190-cut.jpg?raw=true">
+
+<img src="https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/doc/image/56775190-cut.png?raw=true">
+
+###Step4.Open the project locally
+Use any code editor you like. It is strongly recommended to use PyCharm.
 
 ###Step5.
 
-
-A Jupyter Notebook is available to demo run, check out the **[tutorial](https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/src/tutorial.ipynb)** on Google Colab/Drive.
+A Jupyter Notebook is available to demo run, check out the **[tutorial](https://github.com/AmerGong/NYPL-HTRModel-NYU-ITP2021summer/blob/main/src/tutorial.ipynb)**.
